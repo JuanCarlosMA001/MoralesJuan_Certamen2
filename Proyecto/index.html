@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Universitario</title>
+</head>
+<body>
+        <h1> Café Universitario</h1> 
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <p>Bienvenido al Café Universitario, un lugar donde la comunidad académica se reúne para compartir ideas, disfrutar de un buen café y fomentar la colaboración entre estudiantes y profesores.</p>
+    <p>Dentro de nuestros productos se destaca la pureza y calidez del café tradicional, cappuccino, chocolate caliente (con malvaviscos) y una variedad de sándwiches de jamón y queso. Además, ofrecemos un ambiente acogedor con Wi-Fi gratuito, mesas de estudio y un espacio para eventos culturales y académicos.</p>
+    <h2>Menú</h2>
+    <ul>
+        <li>Café</li>
+        <li> Sandwich de jamón y queso</li>
+        <li>Chocolate caliente</li>
+        <li>Cappuccino</li>
+    </ul>
+
+    <h1>Solicitud de Información</h1>
+    <form id="infoForm">
+        <div>
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div>
+            <label for="producto">Producto de interés:</label><br>
+            <select id="producto" name="producto" required>
+                <option value="">Seleccione un producto</option>
+                <option value="Café">Café</option>
+                <option value="Sandwich">Sándwich</option>
+                <option value="Chocolate caliente">Chocolate caliente</option>
+                <option value="Cappuccino">Cappuccino</option>
+            </select>
+        </div>
+        <div>
+            <label for="comentario">Comentario o consulta:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+        </div>
+        <div>
+            <button type="submit">Enviar solicitud</button>
+        </div>
+    </form>
+
+    <h2>Solicitudes Registradas</h2>
+    <table id="registrosTable" border="1" cellspacing="0" cellpadding="4">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Producto</th>
+                <th>Correo electrónico</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById('infoForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var nombre = document.getElementById('nombre').value.trim();
+            var correo = document.getElementById('correo').value.trim();
+            var producto = document.getElementById('producto').value;
+            if (!nombre || !correo || !producto) {
+                return;
+            }
+            var tbody = document.querySelector('#registrosTable tbody');
+            var row = document.createElement('tr');
+            row.innerHTML = '<td>' + nombre + '</td>' +
+                            '<td>' + producto + '</td>' +
+                            '<td>' + correo + '</td>';
+            tbody.appendChild(row);
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
