@@ -1,0 +1,9 @@
+Se Utiliza Copilot con tambien orientación en cuanto a algunas funciones con Gemini, para tareas explicativas. 
+se limita el uso de CoPilot a ejecucion simplemente.
+
+
+Primeramente, TENIENDO YA LA ESTRUCTURA LISTA Se le 
+solicita a la IA que enlace las 
+imagenes y las funciones respectivas a las secciones.
+
+PRIMER Prompt:
