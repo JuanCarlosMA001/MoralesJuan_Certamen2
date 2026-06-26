@@ -11,7 +11,9 @@ Se crea una tabla para listar la informacion recopilada de las solicitudes y pre
 TODO EN EL ORDEN QUE PARECE TENER MEJOR ASPECTO VISUAL Y FACILIDAD DE USO, PARA PREPARAR EL MOMENTO EN QUE LA IA AÑADA EL ESTILO SE BASE EN LA ESTRUCTURA PROPUESTA.
 
 2. SCRIPT.JS FUNCIONES DE LA PAGINA
-Se recicla gran parte del Código de una tarea anterior. se crean las funciones de registrar, limpiar y listar formulario,
+Se recicla gran parte del Código de una tarea anterior. se crean las funciones de registrar, limpiar y listar formulario. Simplemente se modifican los datos para que los id's coincidan con el index.HTML
 
 
 3. STYLE.CSS ESTILO VISUAL, PALETA DE COLORES Y ORGANIZACIÓN DE LA INFORMACIÓN.
+
+Se usa gemini y claude con un agente/orquestador de IA para que modifique el archivo CSS y de apariencia profesional y llamativa.

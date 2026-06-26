@@ -1,9 +1,27 @@
-Se Utiliza Copilot con tambien orientación en cuanto a algunas funciones con Gemini, para tareas explicativas. 
-se limita el uso de CoPilot a ejecucion simplemente.
+Se Utiliza COPILOT con tambien orientación 
+en cuanto a algunas funciones con GEMINI, 
+para tareas explicativas Y chatgpt para consultas y estudio.
 
 
 Primeramente, TENIENDO YA LA ESTRUCTURA LISTA Se le 
 solicita a la IA que enlace las 
-imagenes y las funciones respectivas a las secciones.
+imagenes y las funciones de respectivas a las secciones.
+
 
 PRIMER Prompt:
+"Sin modificar nada aún. el formulario no muestra los nuevos 
+registros, busca por qué y explícamelo" 
+
+NO SE REGISTRABA A PESAR DE TENER TODO LISTO CONCEPTUALMENTE HABLANDO, 
+RESULTA QUE ALGUNOS CONEXIONES DE LOS ID'S ESTABAN INCORRECTOS 
+("DESCRIPCION" EN LUGAR DE "COMENTARIOS")
+
+
+SEGUNDO Prompt:
+"Conecta las imagenes en la carpeta /img segun corresponda a los productos del menú.
+Modifica el archivo css/style.css dale una apariencia profesional y moderna usando la paleta de colores café, negro y gris. 
+No modificar el html para que quede con la misma estructura."
+
+PARA EL DESARROLLO DEL css Y 
+LA APARIENCIA SE USÓ "ANTIGRAVITY IDE" UN 
+ORQUESTADOR DE IA SE BASA EN GEMINI Y CLAUDE
